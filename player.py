@@ -1,7 +1,7 @@
 from turtle import Turtle
 
 STARTING_POSITION = (0, -220)
-SPEED = 10
+MOVE_DISTANCE = 10
 
 class Player(Turtle):
     def __init__(self):
@@ -12,7 +12,7 @@ class Player(Turtle):
         self.goto(STARTING_POSITION)
 
     def move(self):
-        self.forward(SPEED)
+        self.forward(MOVE_DISTANCE)
 
     def reset(self):
         self.goto(STARTING_POSITION)
